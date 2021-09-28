@@ -1,0 +1,27 @@
+.btn-primary , 
+.btn-primary:visited , 
+.btn-primary:focus {
+    background-color: #1FD5AD;
+    border-color: #1fd5ad;
+} 
+
+.btn-primary:hover , 
+.btn-primary:active {
+    background-color: #1fd5aed8;
+    border-color: #1fd5ad;
+} 
+
+.btn-primary:active:focus ,
+.btn-primary:focus
+{
+   box-shadow: 0 0 2px 1px #1fd5ae86 ;
+} 
+
+.bg-primary{
+    background-color: #1fd5ad !important;
+}
+.border-primary{
+    background-color: #1fd5ad !important;
+}
+
+
