@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
-import './index.css';
+
+import './Styles/index.css'
+import './Styles/resets.css';
+
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-    <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
