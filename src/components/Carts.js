@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { CartContext } from '../Context/CartItemContext';
 
 export default function Carts() {
 
+    const {state} = useContext(CartContext);
 
     return (
         <>
-            <h1 className="mt-5 pt-5"> Carts </h1>    
+        <div className="mt-5 pt-5">
+            {
+                state.selectedItems.map(item=><h1>{`${item.title} ${item.count}`}</h1>)
+            }    
+        </div>
         </>
     )
 }

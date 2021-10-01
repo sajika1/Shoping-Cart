@@ -23,7 +23,7 @@ export default function Details(props) {
                             <h3 className="display-6 mb-3 mb-lg-5 mt-3 mt-lg-0">{product.title}</h3>
                             <p><span className="text-primary fw-bold">Category: </span>{product.category}</p>
                             <p className="pe-5">{product.description}</p>
-                            <Link to="/products" className="btn btn-primary btn-lg mt-3 mb-5 mb-md-0">Add To Cart</Link>
+                            <Link to="/products" className="btn btn-primary btn-lg mt-3 mb-5 mb-md-0">Back To Shop</Link>
                         </div>
                         
                     </div>

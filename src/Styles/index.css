@@ -15,6 +15,23 @@ a:hover{
     gap:3.5rem 2rem;
 }
 
+.handel__button__decrease{
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.handel__button__plus , .handel__button__decrease{
+    width: 50px;
+    font-size: 1.4rem;
+    transition: .3s ease-in-out;  
+}
+
+.handel__button__plus:hover , .handel__button__decrease:hover{
+    color: #111;
+}
+
 
 @media only screen and (min-width:768px){
     .products{
