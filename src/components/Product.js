@@ -9,6 +9,16 @@ export default function Product({productItem}) {
 
     const { state , dispatch } = useContext(CartContext);
 
+    const getPrice = ()=> {
+        const basePrice = productItem.price;
+        if (!!state.selectedItems.find(item=>item.id === productItem.id)) {
+            const productCount = state.selectedItems[findIndex(state, productItem.id)].count;
+            return basePrice * productCount;
+        }else{
+            return basePrice;
+        }
+    }
+
     return (
         <>
             <div className={styles.card}>
@@ -23,7 +33,7 @@ export default function Product({productItem}) {
                         <Link to={`/products/${productItem.id}`} className="text-primary">show details</Link>
                         </div>
 
-                        <div className={`${styles.price} fs-4`}>${productItem.price}</div>
+                        <div className={`${styles.price} fs-4`}>${getPrice()}</div>
 
                         <div className={styles.footer}>
                             <div className={styles.buttons}>

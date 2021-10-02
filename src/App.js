@@ -12,6 +12,8 @@ import Products from './components/Products';
 import AboutUs from './components/AboutUs';
 import Carts from './components/Carts';
 import Details from './components/Details';
+import Tancks from './components/Tancks';
+
 
 function App() {
 
@@ -25,6 +27,7 @@ function App() {
             <Route path="/products/:id" component={Details} />
             <Route path="/products" component={Products} />
             <Route path="/aboutus" component={AboutUs} />
+            <Route path="/tancks" component={Tancks} />
             <Route path="/" component={Landing}/>
             <Redirect to="/" />    
           </Switch>      

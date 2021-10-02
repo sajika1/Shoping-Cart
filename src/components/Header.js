@@ -10,7 +10,7 @@ export default function Header() {
         <>
            <Navbar collapseOnSelect expand="lg" fixed="top" className="shadow-sm bg-white">
                 <Container>
-                    <Navbar.Brand href="/">EasyStore <span className="text-muted fs-6 ">.com</span></Navbar.Brand>
+                    <Navbar.Brand className="me-lg-5npm " href="/">EasyStore <span className="text-muted fs-6 ">.com</span></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar" />
                     <Navbar.Collapse id="responsive-navbar">
                         <Nav className="me-auto">
