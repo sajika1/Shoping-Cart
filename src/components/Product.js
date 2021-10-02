@@ -27,26 +27,26 @@ export default function Product({productItem}) {
 
                         <div className={styles.footer}>
                             <div className={styles.buttons}>
-                            {
-                                (!wasAdded(state , productItem.id))
-                                ?
-                                <button className="btn btn-primary w-100 py-2" onClick={()=> dispatch({type:"ADD_ITEM" , selectedItem:productItem}) }>Add To Cart</button>
-                                :<div className="w-100 d-flex justify-content-between align-items-center">
-                                    <div>
-                                        {
-                                            (state.selectedItems[findIndex(state , productItem.id)].count===1)
-                                            ?
-                                            <button className="btn px-3 handel__button__decrease" onClick={()=>dispatch({type:"DELETE",selectedItem:productItem})}><i class="bi bi-trash"></i></button>
-                                            :
-                                            <button className="btn px-3 handel__button__decrease" onClick={()=>dispatch({type:"DECREASE",selectedItem:productItem})}>-</button>
-                                        }
-                                    </div>
-                                    <p className=" d-flex justify-content-between align-items-center fs-5 fw-bold">{state.selectedItems[findIndex(state , productItem.id)].count}</p>
-                                    <button className="btn btn-primary handel__button__plus px-3" onClick={()=>dispatch({type:"INCREASE",selectedItem:productItem})}>+</button>
+                                {
+                                    (!wasAdded(state , productItem.id))
+                                    ?
+                                    <button className="btn btn-primary w-100 py-2" onClick={()=> dispatch({type:"ADD_ITEM" , selectedItem:productItem}) }>Add To Cart</button>
+                                    :<div className="w-100 d-flex justify-content-between align-items-center">
+                                        <div>
+                                            {
+                                                (state.selectedItems[findIndex(state , productItem.id)].count===1)
+                                                ?
+                                                <button className="btn px-3 handel__button__decrease" onClick={()=>dispatch({type:"DELETE",selectedItem:productItem})}><i class="bi bi-trash"></i></button>
+                                                :
+                                                <button className="btn px-3 handel__button__decrease" onClick={()=>dispatch({type:"DECREASE",selectedItem:productItem})}>-</button>
+                                            }
+                                        </div>
+                                        <p className=" d-flex justify-content-between align-items-center fs-5 fw-bold">{state.selectedItems[findIndex(state , productItem.id)].count}</p>
+                                        <button className="btn btn-primary handel__button__plus px-3" onClick={()=>dispatch({type:"INCREASE",selectedItem:productItem})}>+</button>
 
-                                </div>
-                            }
-                        </div>
+                                    </div>
+                                }
+                            </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,84 @@
+.cart{
+    max-width: 700px;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    position: relative;
+}
+
+.manage{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.float__manage{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width:576px){
+    .cart{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .manage{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .float__manage{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.describe{
+    max-width: 500px;
+}
+
+.describe h2{
+    font-size: 1.3em;
+}
+
+.title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.handel__button__decrease{
+    all: unset;
+    color: tomato;
+    font-size: 2rem;
+}
+.handel__button__plus {
+   padding: 1rem;
+    all: unset;
+    color: #1FD5AD;
+    font-size: 2rem;
+}
+
+.handel__button__plus:hover , .handel__button__decrease:hover{
+    color: #111;
+}
+

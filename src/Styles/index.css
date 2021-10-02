@@ -33,6 +33,47 @@ a:hover{
 }
 
 
+.cart__container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.left__side{
+    width: 60%;
+}
+.right__side{
+    width: 40%;
+}
+
+@media screen and (max-width:1024px){
+    
+    .cart__container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .left__side{
+        width: 100%;
+    }
+    .right__side{
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+.show__price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__cart{
+    background-color: #f9f9fb;
+    border-radius: .5rem;
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
 @media only screen and (min-width:768px){
     .products{
         grid-template-columns: repeat(2 , 1fr);
