@@ -1,5 +1,7 @@
-# easyshopstore.netlify.app
-click on top link to see demo
+# Easy Shop
+click on below link to see demo
+
+easyshopstore.netlify.app
 
 ## Available Scripts
 
