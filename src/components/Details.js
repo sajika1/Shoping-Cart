@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-
-import { ProductsContext } from '../Context/ProductContextProvider';
 
 export default function Details(props) {
 
     const productDetailsId = props.match.params.id;
-    const products = useContext(ProductsContext)
+    const products = useSelector(state => state.productState.products);
     
     const product = products[ productDetailsId -1 ]
 

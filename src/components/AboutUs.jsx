@@ -4,7 +4,6 @@ import TrustMe from '../Images/trustMe.png';
 
 export default function AboutUs() {
     
-
     return (
         <>
          <div className="container vh-100 d-flex align-item-center pt-5 pt-lg-0">

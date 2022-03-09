@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import Thanks from '../Images/thanks.png';
 
 export default function Tancks() {
-    
-
     return (
         <>
             <div className="container vh-100 d-flex align-item-center pt-5 pt-lg-0">

@@ -1,5 +1,3 @@
-import React, { createContext, useReducer } from 'react';
-
 
 const initialState = {
     selectedItems: [],
@@ -7,10 +5,9 @@ const initialState = {
     isCheckout: false,
 }
 
-const reducer = (state , action) => {
+const cartReducer = (state = initialState , action) => {
     switch (action.type) {
         case "ADD_ITEM":
-            console.log(state);
             if (!state.selectedItems.find( item=> item.id === action.selectedItem.id )) {
                 state.selectedItems.push(
                     {
@@ -27,7 +24,6 @@ const reducer = (state , action) => {
                 selectedItems: [...state.selectedItems]
             }
                 
-
         case "INCREASE":
             const increaseItemIndex = state.selectedItems.findIndex(item => item.id === action.selectedItem.id );
             state.selectedItems[increaseItemIndex].count++;
@@ -57,21 +53,8 @@ const reducer = (state , action) => {
             return { ...state  }
             
         default:
-            break;
+            return state;
     }
 }
 
-export const CartContext = createContext();
-
-export default function CartItemContext(props) {
-    
-    const [state , dispatch]= useReducer( reducer , initialState );
-
-    return (
-        <>
-            <CartContext.Provider value={ {state , dispatch} }>
-                {props.children}
-            </CartContext.Provider>
-        </>
-    )
-}
+export default cartReducer;
