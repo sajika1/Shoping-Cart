@@ -60,4 +60,11 @@ p{
     box-shadow: 0 0 2px 1px #1fd5ae86 ;
 }
 
+.navbar-light .navbar-toggler {
+    color: transparent;
+    transition: all .3s ease-in-out;
+}
 
+.navbar-light .navbar-toggler:hover{
+    border-color: rgba(0, 0, 0, 0.3);
+}
