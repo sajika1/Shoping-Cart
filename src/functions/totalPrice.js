@@ -4,5 +4,5 @@ export const totalPrice = (state)=> {
         total += element.count * element.price ;        
     });
 
-    return total;
+    return total.toFixed(2);
 }
